@@ -4,8 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
-
     <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">Travel Preference Survey Form</h1>
+    <p id="description">
+      Welcome to our Travel Preference Survey! Your input will help us
+      understand your travel preferences and improve our services.
+    </p>
+    <form id="survey-form">
+      <!-- Basic user information -->
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br />
+      <label for="age" id="number-label">Age(optional)</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="8"
+        max="105"
+        placeholder="Age"
+      /><br />
+
+      <!-- Preferred Travel Companion -->
+      <label>How do you usually travel?</label><br />
+      <select id="companion" name="companion">
+        <option value="solo">Solo</option>
+        <option value="family">With Family</option>
+        <option value="friends">With Friends</option>
+        <option value="tour-group">With a Tour Group</option></select
+      ><br />
+
+      <!-- Favorite Travel destination -->
+      <label> Choose your favorite type of travel destination: </label><br />
+      <input type="radio" name="destination" id="beach" value="beach" />
+      <label for="beach">Beach</label><br />
+      <input type="radio" name="destination" id="mountains" value="mountains" />
+      <label for="mountains">Mountains</label><br />
+      <input type="radio" name="destination" id="cities" value="cities" />
+      <label for="cities">Cities</label><br />
+      <input
+        type="radio"
+        name="destination"
+        id="countryside"
+        value="countryside"
+      />
+      <label for="countryside">Countryside</label><br />
+
+      <!-- Preferred transportation -->
+      <label>Select your preferred mode of transportation: </label><br />
+      <select id="vehicle" name="mode-of-travel">
+        <option value="airplane">Airplane</option>
+        <option value="train">Train</option>
+        <option value="car">Car</option>
+        <option value="car">Car</option></select
+      ><br />
+
+      <!-- Activities -->
+      <label>Please select activities you enjoy while traveling:</label>
+
+      <input
+        type="checkbox"
+        id="sightseeing"
+        name="activities"
+        value="sightseeing"
+      />
+      <label for="sightseeing">Sightseeing</label><br />
+
+      <input type="checkbox" id="hiking" name="activities" value="hiking" />
+      <label for="hiking">Hiking</label><br />
+
+      <input type="checkbox" id="relaxing" name="activities" value="hiking" />
+      <label for="relaxing">Relaxing</label><br />
+
+      <input
+        type="checkbox"
+        id="cultural-experiences"
+        name="activities"
+        value="cultural-experiences"
+      />
+      <label for="cultural-experiences">Cultural Experiences</label><br />
+
+      <input
+        type="checkbox"
+        id="adventure-sports"
+        name="activities"
+        value="adventure-sports"
+      />
+      <label for="adventure-sports">Adventure Sports</label><br />
+
+      <input type="checkbox" id="" name="activities" value="photography" />
+      <label for="photography">Photography</label><br />
+
+      <input type="checkbox" id="" name="activities" value="shopping" />
+      <label for="shopping">Shopping</label><br />
+
+      <input type="checkbox" id="food" name="activities" value="food" />
+      <label for="food">Food and Dining</label><br />
+
+      <input
+        type="checkbox"
+        id="wildlife-watching"
+        name="activities"
+        value="wildlife-watching"
+      />
+      <label for="wildlife-watching">Wildlife Watching</label><br />
+
+      <input type="checkbox" id="spa" name="activities" value="spa" />
+      <label for="spa">Spa and Wellness</label><br />
+
+      <input
+        type="checkbox"
+        id="nightlife"
+        name="activities"
+        value="nightlife"
+      />
+      <label for="nightlife">Nightlife</label><br />
+
+      <input
+        type="checkbox"
+        id="learning-workshops"
+        name="activities"
+        value="learning-workshops"
+      />
+      <label for="learning-workshops">Learning Workshops</label><br />
+    </form>
+  </body>
 </html>

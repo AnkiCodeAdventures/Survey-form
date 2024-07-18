@@ -4,17 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Noto+Sans+KR:wght@100..900&family=Playwrite+CU:wght@100..400&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Travel Preference Survey Form</h1>
+    <h1 id="title">Travel Preference Survey Form !</h1>
     <p id="description">
-      Welcome to our Travel Preference Survey! Your input will help us
-      understand your travel preferences and improve our services.
+      Your input will help us understand your travel preferences and improve our
+      services.
     </p>
     <form id="survey-form">
       <!-- Basic user information -->
-      <label for="name" id="name-label">Name</label>
+      <label for="name" id="name-label">Name</label><br />
       <input
         type="text"
         id="name"
@@ -22,7 +40,7 @@
         placeholder="Enter your name"
         required
       /><br />
-      <label for="email" id="email-label">Email</label>
+      <label for="email" id="email-label">Email</label><br />
       <input
         type="email"
         id="email"
@@ -30,10 +48,10 @@
         placeholder="Enter your email"
         required
       /><br />
-      <label for="age" id="number-label">Age(optional)</label>
+      <label for="number" id="number-label">Age(optional)</label><br />
       <input
         type="number"
-        id="age"
+        id="number"
         name="age"
         min="8"
         max="105"
@@ -42,7 +60,7 @@
 
       <!-- Preferred Travel Companion -->
       <label>How do you usually travel?</label><br />
-      <select id="companion" name="companion">
+      <select id="dropdown" name="companion">
         <option value="solo">Solo</option>
         <option value="family">With Family</option>
         <option value="friends">With Friends</option>
@@ -50,20 +68,33 @@
       ><br />
 
       <!-- Favorite Travel destination -->
-      <label> Choose your favorite type of travel destination: </label><br />
-      <input type="radio" name="destination" id="beach" value="beach" />
-      <label for="beach">Beach</label><br />
-      <input type="radio" name="destination" id="mountains" value="mountains" />
-      <label for="mountains">Mountains</label><br />
-      <input type="radio" name="destination" id="cities" value="cities" />
-      <label for="cities">Cities</label><br />
-      <input
-        type="radio"
-        name="destination"
-        id="countryside"
-        value="countryside"
-      />
-      <label for="countryside">Countryside</label><br />
+      <label> Choose your favorite type of travel destination: </label>
+      <div class="radio-group">
+        <input type="radio" name="destination" id="beach" value="beach" />
+        <label for="beach">Beach</label>
+      </div>
+      <div class="radio-group">
+        <input
+          type="radio"
+          name="destination"
+          id="mountains"
+          value="mountains"
+        />
+        <label for="mountains">Mountains</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" name="destination" id="cities" value="cities" />
+        <label for="cities">Cities</label>
+      </div>
+      <div class="radio-group">
+        <input
+          type="radio"
+          name="destination"
+          id="countryside"
+          value="countryside"
+        />
+        <label for="countryside">Countryside</label>
+      </div>
 
       <!-- Preferred transportation -->
       <label>Select your preferred mode of transportation: </label><br />
@@ -75,7 +106,7 @@
       ><br />
 
       <!-- Activities -->
-      <label>Please select activities you enjoy while traveling:</label>
+      <label>Please select activities you enjoy while traveling:</label><br />
 
       <input
         type="checkbox"
@@ -142,6 +173,22 @@
         value="learning-workshops"
       />
       <label for="learning-workshops">Learning Workshops</label><br />
+
+      <!-- textarea component -->
+      <label for="sustainable-travel"
+        >How important is sustainable travel to you, and what practices do you
+        follow?</label
+      ><br />
+      <textarea
+        id="sustainable-travel"
+        name="sustainable-travel"
+        rows="5"
+        cols="50"
+        placeholder="How important is sustainable travel to you, and what practices do you
+        follow?"
+      ></textarea
+      ><br />
+      <input type="submit" id="submit" value="Submit" />
     </form>
   </body>
 </html>

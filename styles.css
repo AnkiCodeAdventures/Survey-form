@@ -19,7 +19,7 @@ body {
       rgba(3, 113, 133, 0.378)
     )
     fill 1;
-  background-image: url(mesut-kaya-eOcyhe5-9sQ-unsplash.jpg);
+  background-image: url(/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +53,7 @@ body {
   width: 60%;
   margin: 2.5rem auto;
   padding: 2rem;
-  background-color: rgba(3, 180, 192, 0.776);
+  background-color: rgba(3, 180, 192, 0.656);
   font-family: "Edu AU VIC WA NT Hand", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -109,4 +109,43 @@ input[type="checkbox"]:checked {
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: none !important;
+}
+
+@media (max-width: 1050px) {
+  #survey-form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 1rem;
+    background-image: url(/mesut-kaya-eOcyhe5-9sQ-unsplashmed.jpg);
+  }
+  #survey-form {
+    width: 83%;
+    font-size: 17px;
+    padding: 1rem;
+    margin: 1.5rem auto;
+  }
+  #title {
+    font-size: 28px;
+  }
+  #description {
+    font-size: 15px;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-position: left;
+  }
+  #survey-form {
+    width: 87%;
+  }
 }

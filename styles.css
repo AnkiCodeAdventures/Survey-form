@@ -44,7 +44,11 @@ body {
   font-style: normal;
   font-size: 20px;
 }
+
 #survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border-radius: 30px;
   width: 60%;
   margin: 2.5rem auto;
@@ -57,11 +61,12 @@ body {
 }
 
 input,
-select {
+select,
+textarea {
   width: 100%;
   color: grey;
-  font-size: 16px;
-  padding: 8px;
+  font-size: 18px;
+  padding: 6px;
   font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
